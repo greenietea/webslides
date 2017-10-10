@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks,
+      @jlantunez.
+    -->
+
+    <!-- SEO -->
+    <title>Builind Bots for Teams by Greenie</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS WebSlides -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+
+  </head>
+  <body>
+
+    <main role="main">
+      <article id="webslides" class="vertical">
+      
+        <section>
+          <div class="wrap size-80">
+            <h1><strong>Building Bots for Teams</strong></h1>
+            <p class="text-intro">Or more accurately, how I built bots that are impactful for my organisation</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-80">
+            <h1><strong>Who am I?</strong></h1>
+            <p class="text-intro">
+            	Greenie Cheng, CTO at GrantTree<br><br>
+            	greenie@granttree.co.uk<br>
+            	<svg class="fa-twitter"><use xlink:href="#fa-twitter"></use></svg>&nbsp;greenietea
+            </p>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-80">
+            <h2><strong>What am I talking about today?</strong></h2>
+            <p></p>
+            <p class="text-intro">Share the story about how and why I built bots.</p>
+          </div>
+          <!-- .end .wrap -->
+      	</section>
+        
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-80">
+            <h2><strong>Two years ago...</strong></h2>
+            <p class="text-intro">I started analysing conversations archived in HipChat and Slack.</p>
+            <p class="text-intro"><img src="slideimages/wordcloud.png"></p>
+        </div>
+    	</section>
+    	<section>
+    		<div class="wrap size-80">
+    			<h2><strong>How I started</strong></h2>
+            	<div class="bg-white shadow">
+	              	<ul class="flexblock reasons">
+	                <li>
+	                  <h5>All the words</h5>
+	                  <p>Downloaded the archived conversations in text format and clean up the data to remove private channels and notifications from Slack integrations</p>
+	                </li>
+	                <li>
+	                  <h5>NLTK</h5>
+	                  <p>Wrote a script in Python and used the Natural Language ToolKit (https://nltk.org) to parse the files to see what it finds</p>
+	                </li>
+	                <li>
+	                  <h5>Uncovered frequently used term</h5>
+	                  <p>Chose a list of excluded words and find that most frequently asked questions are about clients</p>
+	                </li>
+	                <li>
+	                  <h5>Simplified</h5>
+	                  <p>Instead of using NLTK, a simple hash table worked just as well</p>
+	                </li>
+	              </ul>
+	            </div>
+	            <!-- .end .bg-white shadow -->
+	         </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap size-80">
+            <h2><strong>Connecting the dots</strong></h2>
+            <p class="text-intro"><br>
+            	<i>Why don't they just use the platform I built? It's all got the data!</i>
+          	</p>
+          </div>
+        </section>
+        <section>
+          <div class="wrap size-80">
+            <h2><strong>Interface with a bot</strong></h2>
+            <div class="bg-white shadow">
+	              <ul class="flexblock reasons">
+	                <li>
+	                  <h5>Intent</h5>
+	                  <p>What type of info is the user asking for? </p>
+	                </li>
+	                <li>
+	                  <h5>Parameter</h5>
+	                  <p>What is specific about the intent? (e.g. client name)</p>
+	                </li>
+	                <li>
+	                  <h5>Action</h5>
+	                  <p>How to map the intent to an action for the bot? </p>
+	                </li>
+	                <li>
+	                  <h5>Request data</h5>
+	                  <p>Which data source does the bot request data from?</p>
+	                </li>
+	                <li>
+	                  <h5>Response</h5>
+	                  <p>Parse, prettifier, return response to the user</p>
+	                </li>
+	              </ul>
+	            </div>
+          </div>
+        </section>
+        <section>
+    		<div class="wrap size-80">
+    			<h2><strong>Results</strong></h2>
+    			<p class="text-intro"><br>
+    				Engaged users<br><br>
+    				Used in group discussions<br><br>
+    				Users asking more questions<br><br>
+    			</p>
+	         </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+    		<div class="wrap size-80">
+    			<h2><strong>Challenges</strong></h2>
+    			<p class="text-intro"><br>
+    				Imperfect users with strict strings matching<br><br>
+    				Lack of parameters<br><br>
+    				Context switching<br><br>
+    			</p>
+	         </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+    		<div class="wrap size-80">
+    			<h2><strong>How I really did it at the end</strong></h2>
+    			<p class="text-intro"><br>
+    				Used a service to do the request parsing Api.ai https://api.ai
+
+    			</p>
+	         </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+        	<div class="wrap size-80">
+        		<h2><strong>Lessons learned</strong></h2>
+        		<div class="text-intro"><br>
+        			Software engineers are problem solvers first and software is one of the tools. <br><br>
+        			Don't reinvent the wheel.<br><br>
+        			Geek out on something that engages the users first, and leave the hard computing problems for later.
+
+        		</div>
+        	</div>
+        </section>
+        <section>
+        	<div class="wrap size-80">
+        		<h2><strong>Contact me</strong></h2>
+        		<div class="text-intro"><br>
+	            	Greenie Cheng<br>
+	            	greenie@granttree.co.uk<br>
+	            	<svg class="fa-twitter"><use xlink:href="#fa-twitter"></use></svg>&nbsp;greenietea
+        		</div>
+        	</div>
+        </section>
+      </article>
+      <!-- end article -->
+    </main>
+    <!-- end main -->
+
+   <!-- A global footer
+
+     <footer role="contentinfo">
+      <div class="wrap">
+        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
+      </div>
+    </footer>  -->
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+  </body>
+</html>
